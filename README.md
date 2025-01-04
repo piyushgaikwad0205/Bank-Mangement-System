@@ -2,9 +2,9 @@
 ---------------------------------
 
 > Direction of use
-> > Step 1 : Clone Repo
-> > Step 2 : Run index.py
+> > <li>Step 1 : Clone Repo</li>  
+> > <li>Step 2 : Run index.py </li>
 
-> Authour : Piyush Gaikwad
-> Date : 05/01/2025
-> Time : 01:36 AM
+> Authour : Piyush Gaikwad<br>
+> Date : 05/01/2025<br>
+> Time : 01:36 AM<br>
