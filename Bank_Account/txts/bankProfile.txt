@@ -1,0 +1,4 @@
+Account_Number = 9579560627
+IDFC_Code = ICCI0098
+BankBalance=5018.0
+Password = 1234
