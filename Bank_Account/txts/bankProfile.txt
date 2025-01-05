@@ -1,4 +1,5 @@
 Account_Number = 9579560627
 IDFC_Code = ICCI0098
-BankBalance=5018.0
+BankBalance = 9000.0
+User_name = admin
 Password = 1234

@@ -3,19 +3,11 @@ from functions import getAccountInfo
 
 class CreateUser :
 
-        userName = "admin"
+        userName = getAccountInfo('UserName')
         userAccNo = getAccountInfo('AccountNumber')
         userBalance = getAccountInfo('Balance')
         userPassword = getAccountInfo('Password')
  
-
-        def getAccountNo (self):
-                return self.userAccNo
-        def getAccountBalance (self):
-                return self.userBalance
-        def getAccountPass (self):
-                return self.userPassword
-
 
 # ------------------------------------------Main Program-------------------------------------------------
 
@@ -45,7 +37,7 @@ while (key):
         else :
                 print("Wrong User Name or Password...")
                 count = count + 1
-                print(count)
+                print(f"{count} Attempt Left...")
                 print("Try Again...\n")
 
 
@@ -61,17 +53,18 @@ if(proseed):
         userInput = None
         while(passkey):
 
-                userval = "Press 1 For Credit Money\nPress 2 Debit Money\nPress 3 Check Balance\nPress 4 for Forget"
+                userval = "Press 1 For Credit Money\nPress 2 Debit Money\nPress 3 Check Balance\nPress 4 for Forget\nPress 5 for Adminstor changes"
                 print(userval)
                 try:
                         userInput = int(input("Enter User choise : "))
                         passkey = not(innerBank(userInput))
                         proseed = True
                         
-                except (TypeError):
+                except (TypeError and ValueError):
                         
                         print("Enter the Wrong Input... Try Again\n")
                         passkey = True
                 
-                if (not (userInput <= 4)and (userInput > 0)):
+                if (not (userInput <= 5)and (userInput > 0)):
+                        print("Enter the Wrong Input... Try Again\n")
                         passkey = True
