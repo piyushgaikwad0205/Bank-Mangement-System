@@ -1,4 +1,4 @@
-# This is Project for Mini Bank
+# Project Name : Mini Bank
 ---------------------------------
 
 > Direction of use
