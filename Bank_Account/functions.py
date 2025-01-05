@@ -123,8 +123,6 @@ def creditEntry (amount):
 
 def debitEntry (amount):
             with open('Bank_Account\\txts\\satement.txt','a+') as file:
-                    now = datetime.now()
-                    current_time = now.strftime("%Y-%m-%d %H:%M:%S")
                     
                     file.write(f"|{current_time} |               |     {amount}    | {getBalance()}        |\n")
 
